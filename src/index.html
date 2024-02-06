@@ -7,8 +7,16 @@
         <link rel="icon" type="image/png" href="./isha-logo.png" />
         <link rel="stylesheet" href="./output.css" />
         <script src="./script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet" />
         <style>
-            /* Keyframe for fadeInRight animation */
+            h1,
+            .merriweather {
+                font-family: Merriweather, Arial, sans-serif;
+            }
         </style>
     </head>
     <body>
@@ -35,36 +43,40 @@
                     <ul
                         tabindex="0"
                         class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow">
-                        <li href="#teacher"><a>Учитель</a></li>
+                        <li><a href="#teacher">Учитель</a></li>
                         <li><a href="#schedule">Розклад</a></li>
+                        <li><a href="#school">Про школу</a></li>
                     </ul>
                 </div>
                 <a class="btn btn-ghost text-xl">Bhavya Yoga</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li href="#teacher"><a>Учитель</a></li>
+                    <li><a href="#teacher">Учитель</a></li>
                     <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#school">Про школу</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Записатися</a>
+                <a class="btn btn-accent">Записатися</a>
             </div>
         </div>
 
         <div
             class="hero min-h-screen"
-            style="background-image: url(./img/hero3.jpg)">
+            style="background-image: url(./img/hero3.avif)">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Йога від Садхґуру</h1>
+                    <h1 class="mb-5 text-5xl font-bold text-accent">
+                        Йога від Садхґуру
+                    </h1>
                     <p class="mb-5">
                         Навчання практика класичної Хатха Йоги що прийшла з
                         підніжжя священних індійських гір Велліангіріq в Україні
                         та Америці.
                     </p>
-                    <p class="mb-5">
+                    <p class="mb-5 text-neutral-content">
                         Сертифікований вчитель Хатха Йоги фонду «Іша».
                     </p>
                 </div>
@@ -73,31 +85,57 @@
 
         <div class="hero min-h-screen bg-base-200">
             <div class="hero-content flex-col lg:flex-row-reverse">
-                <div>
-                    <h1 class="text-5xl font-bold">Учитель</h1>
-                    <p class="py-6">
-                        Засновник класичної школи Хатха йоги «Bhavya Yoga»,
-                        сертифікований вчитель Хатха йоги фонду «Іша».
+                <div class="px-2">
+                    <h1 class="text-5xl font-bold" id="teacher">Учитель</h1>
+                    <p class="merriweather py-6 text-xl">
+                        У 2016 році закінчила інтенсивний курс підготовки
+                        викладачів Іша-хатха-йоги в центрі йоги «Іша» (Індія),
+                        який включає в себе 1750 годин (пів року) навчання
+                        класичної хатха-йоги в її первозданному вигляді.
+                        Навчання продовжуються і зараз - Школа «Іша Хатха Йоги»
+                        регулярно проводить програми підвищення кваліфікації для
+                        своїх викладачів в Індії, Європі та США, підтримуючи їх
+                        і навчаючи новим практикам.
                     </p>
                 </div>
-                <div class="grid grid-cols-1 justify-items-center">
+                <div class="justify-items-center">
                     <img
-                        src="./img/ava1.jpg"
-                        class="mask mask-squircle max-w-72 shadow-2xl" />
-                    <div class="py-6">Анжела Пелех</div>
+                        src="./img/ava1.avif"
+                        class="mask mask-squircle m-auto max-w-72 shadow-2xl" />
+                    <div class="py-1 text-center text-2xl text-accent">
+                        Анжела Пелех
+                    </div>
+                    <div class="pb-6 text-center">
+                        Засновник класичної школи Хатха йоги «Bhavya&nbsp;Yoga».
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="bg-base-200 px-6">
+            <p class="merriweather py-6 text-base">
+                Я зі Львова. Але в 2003 з сім’єю виїхали в Америку і от в 2012
+                Садхгуру приізджав в Детройт - попали на його програму... Ну і з
+                цього все почалося...
+                <br />
+                Зараз стараюся приїжджати в Україну два рази в березні і на
+                літо, щоб мати змогу передавати практики.
+
+                <br />
+                <br />
+                Збудувала невеличку студію в 2018 році в Карпатах - там і
+                проводяться ретріти і більшість програм. Хоча це місце досить
+                високо в горах .. але програми там проходять чудово (відчуття
+                наче невеличкий Ашрам в Україні). Маємо там Саннідхі ,
+                проводяться по понеділках процес одним медитатором, який там
+                проживає …
+            </p>
+        </div>
+
+        <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content flex-col lg:flex-row-reverse">
                 <div>
-                    <p class="py-6">
-                        Більше двадцяти років вивчаю різні духовні традиції і
-                        практикую йогу. У 2014 році закінчила інтенсивний курс
-                        підготовки викладачів Іша-хатха-йоги в центрі йоги «Іша»
-                        (Індія), який включає в себе 1750 годин (пів року)
-                        навчання класичної хатха-йоги в її первозданному
-                        вигляді. Навчання продовжуються і зараз-Школа
-                        Іша-хатха-йоги регулярно проводить програми підвищення
-                        кваліфікації для своїх викладачів в Індії, Європі та
-                        США, підтримуючи їх і навчаючи новим практикам..
-                    </p>
+                    <p class="py-6">.</p>
                     <p class="py-6">
                         Уже кілька років я практикую і проводжу заняття в
                         Америці, де я зараз живу зі своєю сім'єю. І мені завжди
@@ -107,13 +145,57 @@
                         здоров'я і легкість, перевіреним і ефективним способом
                         зростання і відкриття нових горизонтів.
                     </p>
-                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-accent">Get Started</button>
                 </div>
             </div>
         </div>
 
+        <div class="hero min-h-screen bg-accent text-neutral-content" id="school">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div>
+                    <h1 class="text-4xl pb-6 font-bold">Про школу Іша</h1>
+
+                    <figure class="mx-auto max-w-screen-md text-center">
+                        <svg
+                            class="mx-auto mb-3 h-10 w-10 text-gray-400 dark:text-gray-600"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 18 14">
+                            <path
+                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                        </svg>
+                        <blockquote>
+                            <p class="text-xl font-medium italic ">
+                                Слово «Йога» означає «Єдність». Коли ви в йозі,
+                                ви сприймаєте все як частину себе. Це і є
+                                абсолютна свобода.
+                            </p>
+                        </blockquote>
+                        <figcaption
+                            class="mt-6 flex items-center justify-center space-x-3 rtl:space-x-reverse">
+                            <div
+                                class="flex items-center divide-x-2 divide-gray-500 rtl:divide-x-reverse dark:divide-gray-700">
+                                <cite
+                                    class="pe-3 font-medium "
+                                    >Садхґуру</cite
+                                >
+                                <cite
+                                    class="ps-3 text-sm "
+                                    >засновник Фонду Іша</cite
+                                >
+                            </div>
+                        </figcaption>
+                    </figure>
+            </div>
+                <img
+                    src="./img/sadhguru1.jpg"
+                    class="mask mask-squircle m-auto max-w-72 shadow-2xl" />
+                </div>
+        </div>
+
         <footer
-            class="footer footer-center bg-primary p-10 text-primary-content">
+            class="footer footer-center bg-accent p-10 text-primary-content">
             <aside>
                 <p>Copyright © 2024 - All right reserved</p>
             </aside>
