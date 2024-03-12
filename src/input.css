@@ -7,3 +7,8 @@
     width: 350px;
     /* max-width: 50%; */
 }
+
+.sharing {
+    @apply prose m-1 inline-block  rounded-2xl p-2 shadow-md;
+    width: 350px;
+}
