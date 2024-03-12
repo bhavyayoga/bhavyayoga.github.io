@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.class-card {
+    @apply card image-full static m-1 inline-block bg-base-100 text-left shadow-xl;
+    width: 350px;
+    /* max-width: 50%; */
+}
