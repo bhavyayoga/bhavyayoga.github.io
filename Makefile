@@ -1,5 +1,8 @@
 .PHONY: *
 
+all:
+	npm run start
+
 pretty:
 	npx prettier --write .
 
