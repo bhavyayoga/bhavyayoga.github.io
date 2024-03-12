@@ -1,332 +1,290 @@
 <!doctype html>
 <html lang="ua" data-theme="retro">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Angela Pelekh</title>
-        <link rel="icon" type="image/png" href="./isha-logo.png" />
-        <link rel="stylesheet" href="./output.css" />
-        <script src="./script.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet" />
-        <style>
-            h1,
-            .merriweather {
-                font-family: Merriweather, Arial, sans-serif;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div
-                        tabindex="0"
-                        role="button"
-                        class="btn btn-ghost lg:hidden">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul
-                        tabindex="0"
-                        class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow">
-                        <li><a href="#teacher">Учитель</a></li>
-                        <li><a href="#schedule">Розклад</a></li>
-                        <li><a href="#school">Про школу</a></li>
-                    </ul>
-                </div>
-                <a class="btn btn-ghost text-xl">Bhavya Yoga</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angela Pelekh</title>
+    <link rel="icon" type="image/png" href="./isha-logo.png" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <style>
+      h1,
+      .merriweather {
+        font-family: Merriweather, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow">
+            <li><a href="#teacher">Учитель</a></li>
+            <li><a href="#schedule">Розклад</a></li>
+            <li><a href="#school">Про школу</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Bhavya Yoga</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="#teacher">Учитель</a></li>
+          <li><a href="#schedule">Расписание</a></li>
+          <li><a href="#school">Про школу</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-accent">Записатися</a>
+      </div>
+    </div>
+
+    <div class="hero min-h-screen" style="background-image: url(./img/hero3.avif)">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold text-accent">Йога від Садхґуру</h1>
+          <p class="mb-5">
+            Навчання практика класичної Хатха Йоги що прийшла з підніжжя священних індійських гір
+            Велліангіріq в Україні та Америці.
+          </p>
+          <p class="mb-5 text-neutral-content">Сертифікований вчитель Хатха Йоги фонду «Іша».</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="px-2">
+          <h1 class="text-5xl font-bold" id="teacher">Учитель</h1>
+          <p class="merriweather py-6 text-xl">
+            У 2016 році закінчила інтенсивний курс підготовки викладачів Іша-хатха-йоги в центрі
+            йоги «Іша» (Індія), який включає в себе 1750 годин (пів року) навчання класичної
+            хатха-йоги в її первозданному вигляді. Навчання продовжуються і зараз - Школа «Іша Хатха
+            Йоги» регулярно проводить програми підвищення кваліфікації для своїх викладачів в Індії,
+            Європі та США, підтримуючи їх і навчаючи новим практикам.
+          </p>
+        </div>
+        <div class="justify-items-center">
+          <img src="./img/ava1.avif" class="mask mask-squircle m-auto max-w-72 shadow-2xl" />
+          <div class="py-1 text-center text-2xl text-accent">Анжела Пелех</div>
+          <div class="pb-6 text-center">
+            Засновник класичної школи Хатха йоги «Bhavya&nbsp;Yoga».
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-base-200 px-6">
+      <p class="merriweather py-6 text-base">
+        Я зі Львова. Але в 2003 з сім’єю виїхали в Америку і от в 2012 Садхгуру приізджав в Детройт
+        - попали на його програму... Ну і з цього все почалося...
+        <br />
+        Зараз стараюся приїжджати в Україну два рази в березні і на літо, щоб мати змогу передавати
+        практики.
+
+        <br />
+        <br />
+        Збудувала невеличку студію в 2018 році в Карпатах - там і проводяться ретріти і більшість
+        програм. Хоча це місце досить високо в горах .. але програми там проходять чудово (відчуття
+        наче невеличкий Ашрам в Україні). Маємо там Саннідхі , проводяться по понеділках процес
+        одним медитатором, який там проживає …
+      </p>
+    </div>
+
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+          <p class="py-6">.</p>
+          <p class="py-6">
+            Уже кілька років я практикую і проводжу заняття в Америці, де я зараз живу зі своєю
+            сім'єю. І мені завжди хотілося принести практики Іша-хатха-йоги в Україну. Чому?
+            Найприродніше бажання, знайоме кожному з нас-це бажання ділитися успіхом, методикою, яка
+            повернула здоров'я і легкість, перевіреним і ефективним способом зростання і відкриття
+            нових горизонтів.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="min-h-screen bg-base-200">
+      <div class="text-center" id="programs">
+        <div class="inline-block">
+          <div class="card image-full static inline-block w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a href="#teacher">Учитель</a></li>
-                    <li><a href="#schedule">Расписание</a></li>
-                    <li><a href="#school">Про школу</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn btn-accent">Записатися</a>
-            </div>
+          </div>
         </div>
 
-        <div
-            class="hero min-h-screen"
-            style="background-image: url(./img/hero3.avif)">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold text-accent">
-                        Йога від Садхґуру
-                    </h1>
-                    <p class="mb-5">
-                        Навчання практика класичної Хатха Йоги що прийшла з
-                        підніжжя священних індійських гір Велліангіріq в Україні
-                        та Америці.
-                    </p>
-                    <p class="mb-5 text-neutral-content">
-                        Сертифікований вчитель Хатха Йоги фонду «Іша».
-                    </p>
-                </div>
+        <div class="inline-block">
+          <div class="card image-full inline-block w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <div class="px-2">
-                    <h1 class="text-5xl font-bold" id="teacher">Учитель</h1>
-                    <p class="merriweather py-6 text-xl">
-                        У 2016 році закінчила інтенсивний курс підготовки
-                        викладачів Іша-хатха-йоги в центрі йоги «Іша» (Індія),
-                        який включає в себе 1750 годин (пів року) навчання
-                        класичної хатха-йоги в її первозданному вигляді.
-                        Навчання продовжуються і зараз - Школа «Іша Хатха Йоги»
-                        регулярно проводить програми підвищення кваліфікації для
-                        своїх викладачів в Індії, Європі та США, підтримуючи їх
-                        і навчаючи новим практикам.
-                    </p>
-                </div>
-                <div class="justify-items-center">
-                    <img
-                        src="./img/ava1.avif"
-                        class="mask mask-squircle m-auto max-w-72 shadow-2xl" />
-                    <div class="py-1 text-center text-2xl text-accent">
-                        Анжела Пелех
-                    </div>
-                    <div class="pb-6 text-center">
-                        Засновник класичної школи Хатха йоги «Bhavya&nbsp;Yoga».
-                    </div>
-                </div>
+        <div class="inline-block">
+          <div class="card image-full inline-block w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="bg-base-200 px-6">
-            <p class="merriweather py-6 text-base">
-                Я зі Львова. Але в 2003 з сім’єю виїхали в Америку і от в 2012
-                Садхгуру приізджав в Детройт - попали на його програму... Ну і з
-                цього все почалося...
-                <br />
-                Зараз стараюся приїжджати в Україну два рази в березні і на
-                літо, щоб мати змогу передавати практики.
-
-                <br />
-                <br />
-                Збудувала невеличку студію в 2018 році в Карпатах - там і
-                проводяться ретріти і більшість програм. Хоча це місце досить
-                високо в горах .. але програми там проходять чудово (відчуття
-                наче невеличкий Ашрам в Україні). Маємо там Саннідхі ,
-                проводяться по понеділках процес одним медитатором, який там
-                проживає …
-            </p>
-        </div>
-
-        <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <div>
-                    <p class="py-6">.</p>
-                    <p class="py-6">
-                        Уже кілька років я практикую і проводжу заняття в
-                        Америці, де я зараз живу зі своєю сім'єю. І мені завжди
-                        хотілося принести практики Іша-хатха-йоги в Україну.
-                        Чому? Найприродніше бажання, знайоме кожному з нас-це
-                        бажання ділитися успіхом, методикою, яка повернула
-                        здоров'я і легкість, перевіреним і ефективним способом
-                        зростання і відкриття нових горизонтів.
-                    </p>
-                </div>
+        <div class="inline-block">
+          <div class="card image-full inline-block w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="min-h-screen bg-base-200">
-            <div class="text-center" id="programs">
-                <div class="inline-block">
-                    <div
-                        class="card image-full static inline-block w-96 bg-base-100 shadow-xl">
-                        <figure>
-                            <img
-                                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>
-                                If a dog chews shoes whose shoes does he choose?
-                            </p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="hero min-h-screen bg-accent text-neutral-content" id="school">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+          <h1 class="pb-6 text-4xl font-bold">Про школу Іша</h1>
 
-                <div class="inline-block">
-                    <div
-                        class="card image-full inline-block w-96 bg-base-100 shadow-xl">
-                        <figure>
-                            <img
-                                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>
-                                If a dog chews shoes whose shoes does he choose?
-                            </p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="inline-block">
-                    <div
-                        class="card image-full inline-block w-96 bg-base-100 shadow-xl">
-                        <figure>
-                            <img
-                                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>
-                                If a dog chews shoes whose shoes does he choose?
-                            </p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="inline-block">
-                    <div
-                        class="card image-full inline-block w-96 bg-base-100 shadow-xl">
-                        <figure>
-                            <img
-                                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>
-                                If a dog chews shoes whose shoes does he choose?
-                            </p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <figure class="mx-auto max-w-screen-md text-center">
+            <svg
+              class="mx-auto mb-3 h-10 w-10 text-gray-400 dark:text-gray-600"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 14">
+              <path
+                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+            </svg>
+            <blockquote>
+              <p class="text-xl font-medium italic">
+                Слово «Йога» означає «Єдність». Коли ви в йозі, ви сприймаєте все як частину себе.
+                Це і є абсолютна свобода.
+              </p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center justify-center space-x-3 rtl:space-x-reverse">
+              <div
+                class="flex items-center divide-x-2 divide-gray-500 rtl:divide-x-reverse dark:divide-gray-700">
+                <cite class="pe-3 font-medium">Садхґуру</cite>
+                <cite class="ps-3 text-sm">засновник Фонду Іша</cite>
+              </div>
+            </figcaption>
+          </figure>
         </div>
+        <img src="./img/sadhguru1.jpg" class="mask mask-squircle m-auto max-w-72 shadow-2xl" />
+      </div>
+    </div>
 
-        <div
-            class="hero min-h-screen bg-accent text-neutral-content"
-            id="school">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <div>
-                    <h1 class="pb-6 text-4xl font-bold">Про школу Іша</h1>
+    <div class="bg-accent text-neutral-content">
+      <div class="px-6">
+        <p class="merriweather py-6 text-xl">
+          Школа іжа-хатха-йоги, заснована Садхгуру, покликана відродити давню, але не втрачає своєї
+          актуальності науку хатха-йоги. Садхгуру підносить йогу-основу духовної сили Індії, що
+          стала її подарунком світу, – як науку про внутрішній устрій людини. Програми
+          Іша-хатха-йоги вже пройшли мільйони людей по всьому світу.
+        </p>
+      </div>
+    </div>
 
-                    <figure class="mx-auto max-w-screen-md text-center">
-                        <svg
-                            class="mx-auto mb-3 h-10 w-10 text-gray-400 dark:text-gray-600"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            viewBox="0 0 18 14">
-                            <path
-                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                        </svg>
-                        <blockquote>
-                            <p class="text-xl font-medium italic">
-                                Слово «Йога» означає «Єдність». Коли ви в йозі,
-                                ви сприймаєте все як частину себе. Це і є
-                                абсолютна свобода.
-                            </p>
-                        </blockquote>
-                        <figcaption
-                            class="mt-6 flex items-center justify-center space-x-3 rtl:space-x-reverse">
-                            <div
-                                class="flex items-center divide-x-2 divide-gray-500 rtl:divide-x-reverse dark:divide-gray-700">
-                                <cite class="pe-3 font-medium">Садхґуру</cite>
-                                <cite class="ps-3 text-sm"
-                                    >засновник Фонду Іша</cite
-                                >
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <img
-                    src="./img/sadhguru1.jpg"
-                    class="mask mask-squircle m-auto max-w-72 shadow-2xl" />
-            </div>
+    <footer class="footer footer-center bg-accent p-10 text-primary-content">
+      <aside>
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+          </a>
         </div>
-
-        <div class="bg-accent text-neutral-content">
-            <div class="px-6">
-                <p class="merriweather py-6 text-xl">
-                    Школа іжа-хатха-йоги, заснована Садхгуру, покликана
-                    відродити давню, але не втрачає своєї актуальності науку
-                    хатха-йоги. Садхгуру підносить йогу-основу духовної сили
-                    Індії, що стала її подарунком світу, – як науку про
-                    внутрішній устрій людини. Програми Іша-хатха-йоги вже
-                    пройшли мільйони людей по всьому світу.
-                </p>
-            </div>
-        </div>
-
-        <footer
-            class="footer footer-center bg-accent p-10 text-primary-content">
-            <aside>
-                <p>Copyright © 2024 - All right reserved</p>
-            </aside>
-            <nav>
-                <div class="grid grid-flow-col gap-4">
-                    <a href=""
-                        ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            class="fill-current">
-                            <path
-                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg
-                    ></a>
-                    <a href=""
-                        ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            class="fill-current">
-                            <path
-                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg
-                    ></a>
-                    <a href=""
-                        ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            class="fill-current">
-                            <path
-                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg
-                    ></a>
-                </div>
-            </nav>
-        </footer>
-    </body>
+      </nav>
+    </footer>
+  </body>
 </html>

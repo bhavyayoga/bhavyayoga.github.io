@@ -7,6 +7,15 @@ module.exports = {
     trailingComma: 'all',
     arrowParens: 'always',
     bracketSameLine: true,
+    htmlWhitespaceSensitivity: 'ignore',
     plugins: ['prettier-plugin-tailwindcss'],
-    overrides: [],
+    overrides: [
+        {
+            files: '*.html',
+            options: {
+                tabWidth: 2,
+                printWidth: 100,
+            },
+        },
+    ],
 };
