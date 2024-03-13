@@ -9,6 +9,6 @@
 }
 
 .sharing {
-    @apply prose m-1 inline-block  rounded-2xl p-2 shadow-md;
-    width: 350px;
+    @apply prose m-1 inline-block rounded-2xl bg-base-200 p-2 shadow-md;
+    width: 330px;
 }
