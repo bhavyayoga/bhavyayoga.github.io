@@ -1331,12 +1331,6 @@ html {
   scrollbar-width: none;
 }
 
-.carousel-vertical {
-  flex-direction: column;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
 .carousel-item {
   box-sizing: content-box;
   display: flex;
@@ -2928,17 +2922,16 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 1.5rem;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 .mb-3 {
   margin-bottom: 0.75rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-3 {
@@ -2979,14 +2972,6 @@ details.collapse summary::-webkit-details-marker {
 
 .h-80 {
   height: 20rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .min-h-screen {
@@ -3082,6 +3067,10 @@ details.collapse summary::-webkit-details-marker {
   border-color: rgb(107 114 128 / var(--tw-divide-opacity));
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
 }
@@ -3175,6 +3164,14 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -3967,6 +3964,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   width: 330px;
+}
+
+.sharing img {
+  margin-top: 0px;
 }
 
 @media (min-width: 1024px) {
