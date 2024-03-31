@@ -6,6 +6,7 @@
     <title>Bhavya Yoga</title>
     <link rel="icon" type="image/png" href="./isha-logo.png" />
     <link rel="stylesheet" href="./output.css" />
+    <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
     <script src="./script.js" defer></script>
     <script src="/lite-yt-embed.js"></script>
     <link rel="stylesheet" href="/lite-yt-embed.css" />
@@ -90,7 +91,7 @@
         training in its original form.
         <br />
         Training continues even now – the Isha Hatha Yoga School regularly conducts advanced
-        training programs for its teachers in India, Europe and the United States, supporting them
+        training programs for its teachers in India, Europe, and the United States, supporting them
         and teaching them new practices."
       </p>
       <div class="justify-items-center py-6">
@@ -131,17 +132,21 @@
             <figure>
               <img src="/img/surya-kriya-card.avif" alt="Surya Kriya" />
             </figure>
-            <div class="card-body p-5">
+            <div class="card-body p-4">
               <h2 class="card-title">Surya Kriya</h2>
               <p>(2 sessions) March 2-3 10:00-13:00 UTC</p>
-              <p>Kruisbessenstraat 13 2564 VB The Hague</p>
+              <p>
+                <a href="https://maps.app.goo.gl/rq1rjnd7psr4oNZh6" class="link" target="_blank">
+                  Unnamed Road, Lybokhora, Lviv Oblast, Ukraine, 82633
+                </a>
+              </p>
               <p>
                 <b>$ 100</b>
-                ,- incl. online support
+                , incl. online support
               </p>
               <div class="card-actions justify-start">
                 <button class="btn btn-accent" onclick="modalApply.showModal()">Apply</button>
-                <a href="#surya-kriya-info" class="btn btn-outline btn-accent">Learn More</a>
+                <a href="#programs-info" class="btn btn-outline btn-accent">Learn More</a>
               </div>
             </div>
           </div>
@@ -150,25 +155,57 @@
         <div class="inline-block">
           <div class="class-card card">
             <figure>
-              <img src="/img/surya-kriya-card.avif" alt="Surya Kriya" />
+              <img src="/img/angamardana2-card.avif" alt="Angamardana" />
             </figure>
-            <div class="card-body"></div>
+            <div class="card-body p-4">
+              <h2 class="card-title">Angamardana</h2>
+              <p>(3 sessions) March 5-8 10:00-13:30 UTC</p>
+              <p>
+                <a href="https://maps.app.goo.gl/rq1rjnd7psr4oNZh6" class="link" target="_blank">
+                  Unnamed Road, Lybokhora, Lviv Oblast, Ukraine, 82633
+                </a>
+              </p>
+              <p>
+                <b>$ 250</b>
+                , incl. online support
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-accent" onclick="modalApply.showModal()">Apply</button>
+                <a href="#programs-info" class="btn btn-outline btn-accent">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="inline-block">
           <div class="class-card card">
             <figure>
-              <img src="/img/surya-kriya-card.avif" alt="Surya Kriya" />
+              <img src="/img/yogasanas2-card.avif" alt="Yogasanas" />
             </figure>
-            <div class="card-body"></div>
+            <div class="card-body p-4">
+              <h2 class="card-title">Yogasanas</h2>
+              <p>(4 sessions) March 11-15 10:00-13:00 UTC</p>
+              <p>
+                <a href="https://maps.app.goo.gl/rq1rjnd7psr4oNZh6" class="link" target="_blank">
+                  Unnamed Road, Lybokhora, Lviv Oblast, Ukraine, 82633
+                </a>
+              </p>
+              <p>
+                <b>$ 300</b>
+                , incl. online support
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-accent" onclick="modalApply.showModal()">Apply</button>
+                <a href="#programs-info" class="btn btn-outline btn-accent">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <h1 class="pb-6 pt-12 text-5xl font-bold" id="programs-info">Our Programs</h1>
 
-      <details class="collapse collapse-arrow my-2 bg-base-200">
+      <details class="collapse collapse-arrow my-2 bg-base-200" id="upa-yoga-info">
         <summary class="collapse-title text-xl font-medium">
           <div class="mask grid grid-cols-[120px,auto] gap-1">
             <div class="avatar">
@@ -250,7 +287,7 @@
         </div>
       </details>
 
-      <details class="collapse collapse-arrow my-2 bg-base-200">
+      <details class="collapse collapse-arrow my-2 bg-base-200" id="angamardana-info">
         <summary class="collapse-title text-xl font-medium">
           <div class="mask grid grid-cols-[120px,auto] gap-1">
             <div class="avatar">
@@ -288,7 +325,7 @@
         </div>
       </details>
 
-      <details class="collapse collapse-arrow my-2 bg-base-200">
+      <details class="collapse collapse-arrow my-2 bg-base-200" id="bhuta-shuddhi-info">
         <summary class="collapse-title text-xl font-medium">
           <div class="mask grid grid-cols-[120px,auto] gap-1">
             <div class="avatar">
@@ -323,7 +360,7 @@
         </div>
       </details>
 
-      <details class="collapse collapse-arrow my-2 bg-base-200">
+      <details class="collapse collapse-arrow my-2 bg-base-200" id="yogasanas-info">
         <summary class="collapse-title text-xl font-medium">
           <div class="mask grid grid-cols-[120px,auto] gap-1">
             <div class="avatar">
@@ -363,7 +400,7 @@
       </details>
     </div>
 
-    <div class="bg-accent px-6 pt-12 text-neutral-content">
+    <div class="bg-accent px-6 py-12 text-neutral-content" id="school">
       <h1 class="pb-6 text-4xl font-bold">About Isha</h1>
       <p class="merriweather py-6 text-xl">
         The Isha Hatha yoga school, founded by Sadhguru, is designed to revive the ancient but still
@@ -414,10 +451,17 @@
         </div>
       </div>
 
-      <p class="merriweather py-6 text-xl">
+      <p class="merriweather py-6 text-base">
         Three decades ago, Sadhguru founded the Isha Foundation. It is a volunteer-run non-profit
         organization, which works towards fostering world harmony through individual transformation.
         Today Isha operates over 300 centers worldwide with the help of over 11 million volunteers.
+      </p>
+
+      <center>
+        <img src="/img/bhavya-yoga-logo.png" alt="Bhavya Yoga Logo" class="mx-1" />
+      </center>
+      <p class="merriweather py-6 text-xl">
+        The school's name "Bhayva Yoga" was given by Sadhguru, it means: the best yoga! 😇
       </p>
     </div>
 
@@ -457,10 +501,10 @@
             </div>
           </div>
           <div class="text-left">
-            "Sadhguru said that there is little that compares to Surya Kriya in the way it develops
-            your mind. After 2-3 months of regular practice, I began to notice the change in my
-            perception and thought process during and immediately after doing Surya Kriya. My mind
-            becomes clear. What may appear as a simple gymnastics - in fact, it is not."
+            "Sadhguru said that little compares to Surya Kriya in the way it develops your mind.
+            After 2-3 months of regular practice, I began to notice the change in my perception and
+            thought process during and immediately after doing Surya Kriya. My mind becomes clear.
+            What may appear as a simple gymnastics is not."
           </div>
           <b class="text-accent">– Konstantin, Ukraine</b>
         </div>
